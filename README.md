@@ -53,3 +53,17 @@ Again, you ask the system what to do.
 Now you drink the cofee.
 
     > d
+
+# Building
+
+```bash
+stack exec -- pacman -Syu
+stack exec -- pacman -Sy mingw64/mingw-w64-x86_64-sqlite3
+stack build
+```
+
+# Running
+
+```bash
+stack exec -- htodo
+```
